@@ -1,8 +1,8 @@
 package restaurant;
 
 import javax.swing.*;
-import oracle.jdeveloper.layout.XYLayout;
-import oracle.jdeveloper.layout.XYConstraints;
+//import oracle.jdeveloper.layout.XYLayout;
+//import oracle.jdeveloper.layout.XYConstraints;
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.event.*;
@@ -144,7 +144,7 @@ public class MainS extends JFrame implements ActionListener,ListSelectionListene
    private JLabel jLabel4_menu = new JLabel();
   private JScrollPane jScrollPane3_menu = new JScrollPane();
   private JScrollPane jScrollPane1_menu = new JScrollPane();
-  private XYLayout xYLayout1 = new XYLayout();
+  //private XYLayout xYLayout1 = new XYLayout();
   private JPanel jPanel1_menu = new JPanel();
   private GridBagLayout gridBagLayout1_menu = new GridBagLayout();
   private JPanel jPanel2_menu = new JPanel();
@@ -169,7 +169,7 @@ public class MainS extends JFrame implements ActionListener,ListSelectionListene
   private JScrollPane jScrollPane12 = new JScrollPane();
   private GridBagLayout gridBagLayout9 = new GridBagLayout();
   private JPanel jPanel2 = new JPanel();
-  private XYLayout xYLayout4 = new XYLayout();
+  //private XYLayout xYLayout4 = new XYLayout();
   private GridBagLayout gridBagLayout1 = new GridBagLayout();
   private GridBagLayout gridBagLayout10 = new GridBagLayout();
   private JScrollPane scrDown = new JScrollPane();
@@ -523,8 +523,8 @@ public class MainS extends JFrame implements ActionListener,ListSelectionListene
     jPanel10.setLayout(gridBagLayout2);
     jPanel6.setLayout(gridBagLayout8);
     jPanel2.setLayout(gridBagLayout1);
-    xYLayout4.setWidth(962);
-    xYLayout4.setHeight(766);
+   // xYLayout4.setWidth(962);
+   // xYLayout4.setHeight(766);
     jPanel5.add(jPanel8, new GridBagConstraints(0, 0, 1, 1, 1.0, 1.0, GridBagConstraints.CENTER, GridBagConstraints.BOTH, new Insets(5, 5, 3, 0), 5, 12));
     jPanel5.add(jPanel9, new GridBagConstraints(1, 0, 1, 1, 1.0, 1.0, GridBagConstraints.CENTER, GridBagConstraints.BOTH, new Insets(5, 0, 3, 3), 0, 0));
     jPanel3.add(delivery, new GridBagConstraints(3, 0, 1, 1, 0.0, 0.0, GridBagConstraints.CENTER, GridBagConstraints.NONE, new Insets(5, 15, 0, 0), 10, 2));
@@ -721,8 +721,8 @@ restaurantPane.setLayout(borderLayout1);
     jLabel5_Res.setHorizontalAlignment(SwingConstants.TRAILING);
     jLabel6_Res.setText("ABName:");
     jLabel6_Res.setHorizontalAlignment(SwingConstants.TRAILING);
-    xYLayout1.setWidth(948);
-    xYLayout1.setHeight(568);
+   // xYLayout1.setWidth(948);
+   // xYLayout1.setHeight(568);
     jPanel5_Res.add(abName_Res, new GridBagConstraints(16, 3, 1, 2, 1.0, 0.0, GridBagConstraints.WEST, GridBagConstraints.HORIZONTAL, new Insets(25, 0, 0, 3), 74, 6));
     jPanel5_Res.add(phone3_Res, new GridBagConstraints(16, 0, 1, 2, 1.0, 0.0, GridBagConstraints.WEST, GridBagConstraints.HORIZONTAL, new Insets(10, 0, 0, 3), 74, 6));
     jPanel5_Res.add(jLabel6_Res, new GridBagConstraints(15, 3, 1, 2, 0.0, 0.0, GridBagConstraints.WEST, GridBagConstraints.NONE, new Insets(25, 0, 0, 0), 9, 6));
@@ -760,8 +760,8 @@ private void createCustomerPane()
 {
 customerPane.setBorder(BorderFactory.createLineBorder(new Color(146, 179, 171), 1));
     customerPane.setLayout(borderLayout1_cus);
-    xYLayout1.setWidth(962);
-    xYLayout1.setHeight(484);
+   // xYLayout1.setWidth(962);
+   // xYLayout1.setHeight(484);
     control_cus.setLayout(gridBagLayout1_cus);
     jLabel1_cus.setText("Restaurant ID:");
     jLabel1_cus.setHorizontalAlignment(SwingConstants.TRAILING);
@@ -1081,11 +1081,11 @@ public void endOp(String resid,String type,String location)
    
     customerID_Res.setForeground(Color.BLACK);
     
-    if(!Database.addRestaurant(ss))
-    {
-      JOptionPane.showMessageDialog(null,"Restaurant addition failed");
-      return;
-    }
+    //if(!Database.addRestaurant(ss))
+    //{
+     // JOptionPane.showMessageDialog(null,"Restaurant addition failed");
+     // return;
+    //}
     String[] ssTable;
     
     ssTable=new String[9]; 
